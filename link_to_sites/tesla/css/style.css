@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    padding-top: 30px;
+    background-image: linear-gradient(white, red, red, white);
+    margin-left: 40px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+header {
+    background-image: url(../img/tesla-cars-header.webp);
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 20px;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    padding-top: 100px;
+}
+
+header img:hover {
+    height: 350px;
+    animation-name: hovereffect;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes hovereffect {
+    0%   {height: 400px;}
+    100% {height: 450px;}
+  }
+
+  #abouttesla {
+      display: flex;
+  }
+
+ .aboutteslacard {
+    padding: 20px;
+    width: 50%;
+    margin: 30px;
+  }
+
+  #abouttesla1, #abouttesla2 {
+      display: flex;
+    border: 2px solid black;
+  }
+
+  #abouttesla1 h2, #abouttesla2 h2 {
+    font-size: 50px;
+  }
+
+  #abouttesla2 h2 {
+    margin-top: 30px;
+  }
+
+  #abouttesla1 p, #abouttesla2 p {
+      font-size: 22px;
+  }
+
+  #abouttesla1 img, #abouttesla2 img {
+      height: 400px;
+  }
+
+  #abouttesla1 img {
+    margin-left: 100px;
+  }
+
+  #abouttesla2 ol {
+      margin-top: 20px;
+      margin-left: 70px;
+    font-size: 30px;
+  }
