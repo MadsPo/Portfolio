@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav {
+    max-width: 1624px;
+    margin: 0 auto;
+    max-height: 117px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 100px;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+nav li {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li:hover {
+    color: red;
+}
+
+nav h2 {
+    background-color: blue;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+#purchase {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+body {
+    max-width: 1920px;
+    background-color: #212121;
+    color: white;
+}
+
+#welcome {
+    color: blue;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+#welcomebuttons {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+#welcomebuttons p {
+    margin-left: 110px;
+    color: white;
+}
+
+#welcomebuttons a {
+    text-decoration: none;
+}
+
+#welcomebuttons a:hover {
+    color: red;
+}
+
+#interactivemenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    width: 50%;
+    margin-right: 100px;
+    text-align: left;
+    grid-template-areas: 
+    "menu1 menu2 menu3"
+    "menu4 menu5 menu6";
+}
+
+
+#interactivemenu h3, #interactivemenu p {
+    padding: 15px;
+}
+
+#startnow {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+}
+
+#contactsales {
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: blue;
+    font-size: 20px;
+    color: white;
+}
+
+header {
+    max-width: 1594px;
+    display: flex;
+    padding-top: 100px;
+    text-align: left;
+    margin: 0 auto;
+    background-image: url(/img/Group_1.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#interactivetext {
+    width: 50%;
+    display: inline-block;
+}
+
+
+#interactivetext p,  #interactivetext h1 {
+    margin-top: 30px;
+}
+
+#interactivetext p {
+    font-size: 20px;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+#interactivetext h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 120px;
+}
+
+#menu1, #menu2, #menu3, #menu4, #menu5, #menu6 {
+    background-color: rgb(43, 40, 40);
+    padding-bottom: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+main {
+    text-align: center;
+    margin-top: 400px;
+}
+
+#whatyoushouldknow h2 {
+    font-size: 60px;
+}
+
+#whatyoushouldknow p {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+    margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    grid-template-areas: 
+    "feature1 feature2 feature3"
+    "feature4 feature5 feature6";
+}
+
+#feature1, #feature2, #feature3, #feature4, #feature5, #feature6 {
+    padding: 20px;
+}
+
+#footerlinks {
+    display: flex;
+}
+
+#footerlinks p {
+    margin-top: 10px;
+}
+
+.footerclass {
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 30px;
+}
+
+footer {
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#socials p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#socials svg {
+    margin-right: 35px;
+}

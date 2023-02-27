@@ -1,0 +1,100 @@
+.section-1-body {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 2vw;
+    margin: auto auto;
+    max-width: 1200px;
+}
+body {
+    background-color: rgb(231, 230, 207);
+}
+.section-1-body article {
+    transition: 1000ms;
+    background-color: rgb(203, 201, 173);
+}
+.section-1-body article figure img {
+    background-color: #ffffff;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+.section-1-body article figure {
+    text-align: center;
+}
+.section-1-body article {
+    border-radius: 8px;
+    box-shadow: rgb(131, 123, 107) -10px -10px 0px;
+
+}
+.section-1-body article figure figcaption h2 {
+    font-size: 130%;
+    color: rgb(107, 96, 84)
+}
+.section-1-body article figure figcaption h3 span {
+    color: rgb(155, 149, 129);
+    font-size: 80%;
+}
+.section-1-body article figure figcaption h3 {
+    font-size: 120%;
+    color:rgb(107, 96, 84)
+}
+.section-1-body article:hover{
+    transition: 500ms;
+    background-color: rgb(203, 201, 173);
+    box-shadow: rgb(131, 123, 107) 10px 10px 0px;
+}
+.section-1-body article figure figcaption button {
+    transition: 1000ms;
+    width: 100%;
+    height: 50px;
+    font-size: 140%;
+    border: none;
+    background-color: rgb(179, 175, 151);
+    cursor: pointer;
+}
+.section-1-body article figure figcaption button:hover {
+    transition: 500ms;
+    width: 100%;
+    height: 50px;
+    font-size: 140%;
+    border: none;
+    color: rgb(203, 201, 173);
+    background-color: rgb(131, 123, 107);
+    letter-spacing: 5px;
+}
+.webshop-welcome {
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(107, 96, 84)
+}
+@media screen and (max-width: 1200px) {
+    .section-1-body {
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        max-width: 1000px;
+        grid-gap: 30px;
+    }
+    .webshop-welcome {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 662px) {
+    .section-1-body {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        max-width: 500px;
+    }
+    .webshop-welcome {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .section-1-body {
+        display: grid;
+        grid-template-columns: 94%;
+        max-width: 500px;
+    }
+    .webshop-welcome {
+        font-size: 40px;
+    }
+}

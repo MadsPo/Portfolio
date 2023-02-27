@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    max-height: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#nav {
+    display: flex;
+}
+
+.navimg {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#largeimg img {
+    min-width: 100%;
+}
+
+main {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 60px;
+}
+
+main p {
+    margin-top: 10px;
+}
+
+#likes {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+#likes div {
+   display: flex;
+    max-width: 100%;
+}
+
+#circle_button {
+    margin-right: 15px;
+}
+
+.some {
+    margin-left: 15px;
+}
+
+#comments {
+    margin-bottom: 50px;
+}
+
+#commentbox {
+    padding-right: 800px;
+    padding-bottom: 100px;
+}
+
+#writecomment a {
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: orange;
+    text-decoration: none;
+    float: right;
+    margin-right: 165px;
+    color: white;
+}
+
+#writecomment {
+    display: block;
+}
+
+#writecomment h2 {
+    margin-bottom: 5px;
+}
+
+#comments img {
+    border-radius: 40px;
+}
+
+.likecomment {
+    display: flex;
+    float: right;
+}
+
+#previousnext {
+    margin: 0 auto;
+    background-color: #D8D5BF;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#previousnext a {
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+}
+
+#previousnext a:hover {
+    color: black;
+}
+
+#first {
+    display: block;
+}
+
+#first1 {
+    display: flex;
+}
+
+#second {
+    display: block;
+}
+
+#second2 {
+    display: flex;
+}
+
+#second2 p {
+    margin-left: auto;
+}
+
+footer {
+    background-color: #AEC1BA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 100%;
+    }
+
+    #largeimg img {
+        max-width: 100%;
+    }
+
+    #writecomment textarea {
+        padding-right: 550px;
+        padding-bottom: 70px;
+    }
+
+    #writecomment a {
+        margin-right: 5px;
+    }
+}

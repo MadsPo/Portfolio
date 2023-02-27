@@ -1,0 +1,98 @@
+nav ul li a {
+    text-decoration: none;
+    color: #6B6054;
+    background-color: #ffffff;
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding: 1vw 2vw 1vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a:hover {
+    transition: 500ms;
+    background-color: #6B6054;
+    color: #CBC9AD;
+}
+nav ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    
+}
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    
+}
+.Visit-Kolding-Nav {
+    display: inline-block;
+    width: 14vw;
+    margin: 0px;
+    padding: 0;
+    margin-left: 2vw;
+    position: absolute;
+}
+.search-icon-nav {
+    float: right;
+    width: 1.5vw;
+    margin-top: 1.4vw;
+    margin-right: 2vw;
+}
+.burger-menu-icon-nav {
+    float: right;
+    width: 1.5vw;
+    margin-top: 1.4vw;
+    margin-right: 2vw;
+    display: none;
+}
+nav {
+    width: 100%;
+    position: fixed;
+    margin-top: 0vw;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: black 20px 20px 200px;
+    top: 0;
+    z-index: 1;
+}
+
+.li-1-nav {
+margin-left: 25vw;
+}
+.burger-menu-list {
+    display: none;
+}
+@media screen and (max-width: 662px) {
+    nav ul li a {
+        display: none;
+    }
+    .search-icon-nav {
+        display: none;
+    }
+    .Visit-Kolding-Nav {
+        display: block;
+        width: 50vw;
+    }
+    nav ul {
+        padding: 5.2vw;
+    }
+    .burger-menu-icon-nav {
+        float: right;
+        width: 6vw;
+        margin-top: 3.5vw;
+        margin-right: 3.5vw;
+    }
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

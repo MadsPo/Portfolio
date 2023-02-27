@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header figure{
+    margin: 0;
+    padding: 0;
+}
+.header-image{
+    width: 100%;
+    height: 30vw;
+}
+
+h1 {
+    background-color: #6b6054;
+    position: relative;
+    bottom: 6vw;
+    left: 5vw;
+    padding: 2vw;
+    width: 50%;
+}
+
+.text-section-1{
+    display: flex;
+    padding: 3vw;
+    justify-content: center;
+    text-align: justify;
+    align-items: flex-start;
+}
+
+.text-section-1 h2{
+    width: 50%;
+    position: relative;
+    bottom: 5vw;
+}
+
+.text-section-2{
+    display: flex;
+    background-color: #9b9581;
+}
+
+.text-field {
+    margin: 5vw;
+}
+
+.text-section-3{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 5vw;
+    gap: 1vw;
+}
+.left-section figure{
+    margin: 0;
+    padding: 0;
+}
+.kindergarten {
+    width: 100%;
+    height: 20vw;
+}
+
+.right-section figure{
+    margin: 0;
+    padding: 0;
+}
+
+.playing-kids{
+    width: 100%;
+    height: 20vw;
+}
+
+@media screen and (max-width: 900px) {
+    .header-figure{
+        width: 100%;
+    }
+    .header-image{
+        width: 100%;
+    }
+
+    .text-section-2{
+        display: block;
+    }
+
+    .text-section-2 p{
+        width: 100%;
+        margin: 5vw;
+    }
+
+        .text-section-3{
+            grid-template-columns: 1fr 1fr;
+        }
+}
