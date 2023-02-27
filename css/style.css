@@ -1,0 +1,283 @@
+ * {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+
+#logo {
+    --s: 4px;
+
+    animation: logoanimation 1s infinite linear;
+  
+    text-align: center;
+    height: 200px;
+    max-width: 200px;
+    padding: .4em .5em;
+    background-color: #BF4D28;
+    color: #fff;
+    --_s: calc(var(--s)*4) 51% repeat-x;
+    --_r: calc(1.345*var(--s)) at left 50%;
+    --_g1: #000 99%,#0000 101%;
+    --_g2: #0000 99%,#000 101%;
+    --mask:
+      radial-gradient(var(--_r) top    calc(var(--s)* 1.9),var(--_g1)) 
+       calc(50% - 2*var(--s) - var(--_i,0px)) 0/var(--_s),
+      radial-gradient(var(--_r) top    calc(var(--s)*-0.9),var(--_g2)) 
+       calc(50% - var(--_i,0px)) var(--s)/var(--_s),
+      radial-gradient(var(--_r) bottom calc(var(--s)* 1.9),var(--_g1)) 
+       calc(50% - 2*var(--s) + var(--_i,0px)) 100%/var(--_s),
+      radial-gradient(var(--_r) bottom calc(var(--s)*-0.9),var(--_g2)) 
+       calc(50% + var(--_i,0px)) calc(100% - var(--s))/var(--_s);
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
+
+  #h3text {
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  
+
+  #logo:focus-visible {
+    -webkit-mask: none;
+    outline-offset: .1em;
+    padding: .2em .5em;
+    margin: .2em 0;
+  }
+
+  @keyframes logoanimation {
+    to {
+      -webkit-mask-position: 
+        calc(50% - 6*var(--s)) calc(50% - var(--s)),
+        calc(50% - 3*var(--s)) calc(50% + var(--s))
+    }
+  }
+
+#arrowup {
+    margin-top: -55px;
+    top: 50%;
+    margin-left: 1550px;
+    max-width: 30px;
+    position: sticky;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 22px;
+    border: 1px solid black;
+    background-color: white;
+    max-height: 30px;
+}
+
+#arrowup:hover {
+    background-color: black;
+    color: white;
+}
+
+.arrowupShow {
+    transition: all 1s;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+.fas {
+    font-size: 50px;
+}
+
+#some .fab {
+    font-size: 50px;
+}
+
+#some {
+    left: 1300px;
+    top: 20px;
+    position: absolute;
+    color: white;
+}
+
+#some a {
+    color: white;
+    text-decoration: none;
+}
+
+#some a:hover {
+    color: rgb(187, 183, 183);
+}
+
+header {
+    background-image: url(../img/red_background.jpg);
+    background-repeat: no-repeat;
+    border-bottom: 5px solid black;
+}
+
+#headerflex {
+    display: flex;
+    border-bottom: 5px solid black;
+}
+
+#headertext {
+    margin: 0 auto;
+    margin-top: 240px;
+    font-size: 27px;
+    color: white;
+}
+
+#nav {
+    color: white;
+    max-width: 300px;
+    height: 705px;
+    background: rgb(16,183,216);
+    background: linear-gradient(rgb(127, 7, 7) 1%, rgba(221,24,24,1) 40%, rgba(225,24,14,1) 60%);
+}
+
+#nav li {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#nav li:hover {
+    cursor: pointer;
+    color: darkgrey; 
+}
+
+#aboutme {
+    font-size: 20px;
+    height: 200px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 600px;
+    color: white;
+    background-color: rgba(163, 54, 46, 0.574);
+    text-align: center;
+}
+
+#mywork {
+    font-size: 30px;
+    color: white;
+    padding-top: 150px;
+    background-color: rgb(26, 210, 210);
+    padding-bottom: 150px;
+}
+
+#mywork h2 {
+    margin-left: 8%;
+    margin-bottom: 30px;
+}
+
+#mywork img {
+    max-height: 201px;
+    padding: 0px;
+}
+
+#mywork img:hover {
+    border: 2px solid white;
+    max-height: 240px;
+    animation-name: workhover;
+    animation-duration: 0.5s;
+    animation-timing-function: ease
+}
+
+@keyframes workhover {
+    From {max-height: 201px;}
+    To {max-height: 240px;}
+  }
+
+.linktosites {
+    text-align: center;
+    max-height: 400px;
+}
+
+#groupwork {
+    max-height: 200px;
+}
+
+#groupwork h2 {
+    margin-top: 120px;
+}
+
+#wholecontact {
+    background-image: url(../img/red_background_v4.jpg);
+    background-repeat: no-repeat;
+}
+
+#contacth2 {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+#contact {
+    padding: 60px;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    display: flex;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+#contactform label {
+    margin-bottom: 10px;
+}
+
+#contactform button {
+    background-color: rgb(26, 210, 210);
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+#contactform input, #contactform textarea {
+    padding: 10px;
+    padding-right: 100px;
+}
+
+#contactform textarea {
+    padding-right: 30px;
+}
+
+#mycontact {
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+footer {
+    padding: 10px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+footer .fab {
+    font-size: 25px;
+    margin-left: 3px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(187, 183, 183);
+}

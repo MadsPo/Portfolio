@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8dc6105352.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        
+<!--
+        <div id="logo">
+            <div id="logoborder"></div>
+            <h3 id="h3text">M</h3>
+          </div>
+-->
+    <div onclick="scrolltoheader()" id="arrowup">
+    <i class="fas fa-sort-up"></i>
+    </div>
+    <div id="some">
+        <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/MadsPo"><i class="fab fa-github-square"></i></a>
+    </div>
+<header>
+<div id="headerflex">
+<ul id="nav">
+    <li onclick="scrolltoaboutme()">Kort om mig</li>
+    <li onclick="scrolltomywork()">Noget af mit arbvejde</li>
+    <li onclick="scrolltogroupwork()">Gruppearbejde</li>
+    <li onclick="scrolltocontact()">Kontakt mig</li>
+</ul>
+<section id="headertext">
+<h2>Hejsa!</h2>
+<h3>Velkommen til min portfolio.</h3>
+</section>
+</div>
+<section id="aboutme">
+    <h2>Kort om mig</h2>
+    <p>Hej! Mit navn er Mads Poulsen, og jeg er 20 år gammel på nuværende tidspunkt. Jeg er i gang med uddannselse til webudvikler i min hverdag og nyder at spille computerspil med vennerne i weekenden. Jeg roder også med lidt photoshop og video redigering i min fritid.</p>
+</section>
+</header>
+<section id="mywork">
+    <h2>Noget af mit arbejde</h2>
+<div class="linktosites">
+    <a href="link_to_sites/tesla/index.html" target="_blank"><img src="img/tesla_click.JPG" alt="Tesla side"></a>
+    <a href="link_to_sites/blog/index.html" target="_blank"><img src="img/mockup_click.JPG" alt="Blog side"></a>
+    <a href="link_to_sites/saastribe/index.html" target="_blank"><img src="img/saastribe_click.jpg" alt="Service side"></a>
+    <a href="link_to_sites/gamle/index.html" target="_blank"><img src="img/gamle_click.JPG" alt="Info side"></a>
+    <a href="link_to_sites/random/index.html" target="_blank"><img src="img/random_click.JPG" alt="Info side"></a>
+</div>
+<section id="groupwork">
+<h2>Gruppearbejde jeg har været medlem af</h2>
+<div class="linktosites">
+    <a href="link_to_sites/himmelblaa/index.html" target="_blank"><img src="img/himmel_click.JPG" alt="Info og blog side"></a>
+    <a href="link_to_sites/visit-kolding/Index.html" target="_blank"><img src="img/visit-kolding_click.JPG" alt="Info og blog side"></a>
+    <a href="link_to_sites/excalibur/index.html" target="_blank"><img src="img/excalibur_click.JPG" alt="Scroll-eventyr"></a>
+</div>
+</section>
+</section>
+<section id="wholecontact">
+<h2 id="contacth2">Vil du i kontakt med mig?</h2>
+<section id="contact">
+    <form id="contactform">
+        <label>
+            <p>Email</p>
+            <input name="email" type="email" placeholder="Email.."/>
+        </label>
+        <label>
+            <p>Besked</p>
+            <textarea name="message" type="text" placeholder="Besked.."></textarea>
+        </label>
+        <br/>
+        <button>Send</button>
+    </form>
+    <div id="mycontact">
+        <h2>Mit kontakt info</h2>
+        <p>Email: madsbuller2@hotmail.com</p>
+    </div>
+</section>
+</section>
+<footer>
+    © Mads Poulsen 2022
+    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+    <a target="_blank" href="https://github.com/MadsPo"><i class="fab fa-github-square"></i></a>
+</footer>
+
+</body>
+<script src="js/app.js"></script>
+</html>
